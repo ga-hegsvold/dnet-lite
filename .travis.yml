@@ -3,4 +3,4 @@ install:
 - sudo apt-get install -qq docbook
 - sudo apt-get install -qq docbook-utils
 
-script: db2pdf dnet-lite.xml
+script: cat dnet-lite.xml > out.xml
