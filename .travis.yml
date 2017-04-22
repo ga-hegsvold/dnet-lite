@@ -1,0 +1,5 @@
+install:
+- sudo apt-get update -qq
+- sudo apt-get install -qq docbook
+
+script: db2pdf dnet-lite.xml
