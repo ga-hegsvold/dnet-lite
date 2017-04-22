@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="dnet-lite" basedir="." default="pdf">
+
+    <property name="app.path" value="..\..\apps"/>
+
+    <property name="saxon" value="${app.path}\Saxon\saxon9he.jar"/>
+    <property name="xsltproc" value="${app.path}\xsltproc\xsltproc.exe"/>	
+    <property name="fop" value="${app.path}\fop\fop.bat"/>	
+
+    <property name="source.file" value="dnet-lite"/>
+    <property name="target.file" value="${source.file}"/>
+
+	<property name="xsl.html" value="xsl\customization.HTML.xsl"/>
+	<property name="xsl.fo"   value="xsl\customization.FO.xsl"/>
+
+	<!-- FIXME -->
+	<target name="db">
+		<xslt
+			in="${source.file}.xml"
+			out="${target.file}.html"
+			style="${xsl.html}"
+			force="true">
+			<classpath location="${saxon}"/>
+			<factory name="net.sf.saxon.TransformerFactoryImpl"/>
+		</xslt>
+	</target>
+	
+	<target name="html">
+		<exec executable="${xsltproc}" failonerror="true">
+			<arg value="--xinclude"/>
+			<arg value="--output" />
+			<arg value="${target.file}.html" />
+			<arg value="${xsl.html}"/>
+			<arg value="${source.file}.xml"/>
+		</exec>
+	</target>
+	
+	<target name="fo">
+		<exec executable="${xsltproc}" failonerror="true">
+			<arg value="--xinclude"/>
+			<arg value="--output" />
+			<arg value="${target.file}.fo" />
+			<arg value="${xsl.fo}"/>
+			<arg value="${source.file}.xml"/>
+		</exec>
+	</target>
+
+	<target name="pdf" depends="fo">
+		<exec executable="${fop}" failonerror="true">
+			<arg value="-fo"/>
+			<arg value="${source.file}.fo" />
+			<arg value="-pdf" />
+			<arg value="${target.file}.pdf"/>
+		</exec>
+	</target>
+
+	<target name="rtf" depends="fo">
+		<exec executable="${fop}" failonerror="true">
+			<arg value="-fo"/>
+			<arg value="${source.file}.fo" />
+			<arg value="-rtf" />
+			<arg value="${target.file}.rtf"/>
+		</exec>
+	</target>
+	
+	<target name="clean" description="Tidying up...">
+		<delete file="${target.file}.fo"/>
+		<delete file="${target.file}.rtf"/>
+		<delete file="${target.file}.pdf"/>
+		<delete file="${target.file}.html"/>
+	</target>
+</project>

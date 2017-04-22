@@ -1,0 +1,47 @@
+
+/*
+ * class styles
+ */
+.title {
+    background-color: #d8ebc8;
+    color: black;
+    border-top-style: solid;
+    border-top-width: medium;
+    border-color: #7ab943;
+    padding: 5px;
+}
+
+.example {
+    background-color: #d8ebc8;
+    border-color: #7ab943;
+    border-left-style: solid;
+    border-left-width: thick;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.programlisting {
+    border-style: dotted;
+    border-width: thin;
+    overflow: auto;
+}
+
+/*
+ * element styles
+ */
+
+a:hover {
+    background-color: #d8ebc8;
+}
+
+html {
+    font-family: calibri;
+}
+
+thead {
+    background-color: #d8ebc8;
+}
+
+td {
+  padding: 2px;
+}

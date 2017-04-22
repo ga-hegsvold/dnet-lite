@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project XSL_XMLUseSet="Yes" XSL_XMLUseFile="D:\markup\DocBook\xsl\xhtml\docbook.xsl">
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;mtx;rdf;smil;svg;wml">
+		<File FilePath="dnet-lite.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="xsl\customization.common.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\customization.FO.footer.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\customization.FO.header.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\customization.FO.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\customization.HTML.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd"/>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

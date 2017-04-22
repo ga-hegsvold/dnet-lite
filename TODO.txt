@@ -1,0 +1,25 @@
+2004.12.10:
+2006.04.26:
+-----------
+Introduction
+Done	Dice
+Done	-Types of dice (Tasks, Impact, Quality)
+Done	-Reroll method
+Done	Character Creation
+Done	-Concept!
+Done	-Starting EP
+Done	-Talents
+Done	-Species
+Done	-Culture
+Done	-Careers
+Done	-Skills
+Done	-Specialities
+Combat
+Magic
+
+New Heaps: Insanity, Taint, Reputation?
+New Backgrounds: Bloodline, Reputation?
+
+(see http://www.d20srd.org/indexes/variantCampaigns.htm)
+
+Describe concept of Campaign/Adventure (Story/Chapter/Act/Scene/Round)?

@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?altova_sps http://www.altova.com/sps/Template/Publishing/docbook.sps?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docbook.org/ns/docbook ..\..\..\Google%20Drive\docbook\5.0\xsd\docbook.xsd">
+	<info>
+		<title>DragonNet RPG Lite</title>
+		<authorgroup>
+			<author>
+				<personname>
+					<firstname>Geir Atle</firstname>
+					<surname>Hegsvold</surname>
+				</personname>
+			</author>
+		</authorgroup>
+		<!--pubdate>2004.12.11</pubdate-->
+		<revhistory>
+			<revision>
+				<revnumber>02</revnumber>
+				<date>2005.01.29</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+          Added Legerdemain - Open locks; Animal Ken => Animal Handling
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>03</revnumber>
+				<date>2005.02.12</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+          Removed a reroll example;
+          Added Culture;
+          "Buy/roll Talents" => "Buy Talents";
+          "Select [Species|Culture|Career(s)]" => "Buy [Species|Culture|Career(s)]";
+          Moved "Buy Talents" in front of "Buy Species" to give a better flow of
+          character creation;
+          Species done; Culture done; Career done;
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>04</revnumber>
+				<date>2005.03.19</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+          Select [Species|Culture|Career(s)|Skills|Specialites] => Buy [...]
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>05</revnumber>
+				<date>2006.03.22</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+          Reorganized sections in Character Creation chapter (moved Acquisition and Advancement to after Starting Experience - nice for players to see how to acquire and advance abilities before they get introduced to the different ones);
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>06</revnumber>
+				<date>2006.03.25</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+          Made all references to skills in task resolutions optional => Talents are the only abilities that everyone is certain to have in a task resolution;
+          Removed weapon impact dice => impact can be calculated from attack success and weapons impact mod.;
+          Rewrote Talent descriptions on min and max to be Recommended, not absolutes;
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>07</revnumber>
+				<date>2006.05.18</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+				Added table magical control and TDs.
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>08</revnumber>
+				<date>2006.05.21</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+				Added a few skill descriptions and a few ideas on magic.
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>09</revnumber>
+				<date>2007.03.19</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+				Added a few skill descriptions (Crafts, Lore, Science).
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>10</revnumber>
+				<date>2010.08.19</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>
+				Clearified Combat Resolution: made "Attack Success" optional for both Close and Ranged Combat;
+				Simplified Magic TD table;
+				Made comments about Talent Advancement and Item Quality Check;
+        </revremark>
+			</revision>
+			<revision>
+				<revnumber>11</revnumber>
+				<date>2010.10.21</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>Added various Task Resolutions.</revremark>
+			</revision>
+			<revision>
+				<revnumber>12</revnumber>
+				<date>2013.09.18</date>
+				<authorinitials>GAH</authorinitials>
+				<revremark>Conformed with DB5.</revremark>
+			</revision>
+		</revhistory>
+		<abstract>
+			<para>
+			This article is meant to be a gentle introduction to the DragonNet (DNet) RPG System.
+			The basic mechanics described here are the same as in the complete system,
+			only simplified to make it easier to comprehend.
+			</para>
+		</abstract>
+	</info>
+	<sect1>
+		<title>Dice</title>
+		<para>
+      For optimal gameplay each player and the Game Master (GM) should have two 10-sided
+      dice (2d10) of different color and two 6-sided dice (2d6).
+    </para>
+		<itemizedlist>
+			<listitem>
+				<para>
+          Task Resolution: d10-d10* (see <xref linkend="reroll"/>)
+        </para>
+			</listitem>
+			<!--listitem><para>Weapon Impact: 2d6</para></listitem-->
+			<listitem>
+				<para>Quality checks: 1d6</para>
+			</listitem>
+		</itemizedlist>
+		<sect2 xml:id="reroll">
+			<title>Reroll Method</title>
+			<para>
+        For Task Resolution, DNet uses an open-ended die roll method designated d10-d10*.
+        Use two ten sided dice of contrasting colors.
+        Each dice can generate a result from 1 to 10: the 0 on the dice is considered
+        to be a 10.
+      </para>
+			<para>
+        Before rolling, choose which dice will be the positive dice and which will be
+        the negative one. In the example below, the white dice is positive, while
+        the black one is negative. You then roll the two dice and substract the
+        negative one from the positive one.
+      </para>
+			<para>
+        When you roll a 10 on one (or both) dice, you compute the partial result and
+        reroll the 10, adding or substracting the new roll, as appropriate. If you
+        also roll a 10 on the reroll, you add it to the partial result and reroll
+        again. You reroll as long as you keep rolling 10s... or until the GM asks to
+        verify your dice. ;)
+      </para>
+			<para>
+        Using this method is denoted as d10-d10* throughout the document.
+      </para>
+			<example>
+				<title>d10-d10*</title>
+				<screen>
+White dice (+): 10
+Black dice (-):  2
+Partial result:  8
+White dice (+):  3
+Final result:   11
+
+White dice (+):  7
+Black dice (-): 10
+Partial result: -3
+Black dice (-):  3
+Final result:   -6
+
+White dice (+): 10
+Black dice (-): 10
+Partial result:  0
+White dice (+): 10
+Black dice (-):  3
+Partial result:  7
+White dice (+):  1
+Final result:    8
+        </screen>
+			</example>
+		</sect2>
+	</sect1>
+	<sect1>
+		<title>Time</title>
+		<para>
+		</para>
+		<itemizedlist>
+			<listitem>
+				<formalpara>
+					<title>Round</title>
+					<para>
+				The smallest increment, a round is about 6 seconds of gametime.
+				Rounds are mainly observed in combat when characters perform quick
+				and fast-paced actions.
+				</para>
+				</formalpara>
+			</listitem>
+			<listitem>
+				<formalpara>
+					<title>Scene</title>
+					<para>
+				A scene resembels a scene in a theatrical play.
+				The scene evolves in one location and usually encompasses a single,
+				specific event. The flow of time within a scene may vary.
+				It may be played out in rounds, it may run parallell to real time,
+				or time may be fast-forwarded through parts of it.
+				</para>
+				</formalpara>
+			</listitem>
+			<listitem>
+				<formalpara>
+					<title>Chapter</title>
+					<para>
+				Often a chapter represents one game session. From the moment you sit
+				down and assume your role to the moment to pack up your dice, you
+				play out a chapter in the story. The end of each chapter should leave
+				you wanting for more, asking questions, and with a sense of the
+				session's relative completion.
+				</para>
+				</formalpara>
+			</listitem>
+			<listitem>
+				<formalpara>
+					<title>Story</title>
+					<para>
+				A story tells one entire tail, whether it comprises several chapters
+				or is completed in a single session. It has an introduction, a plot
+				arc that involves rising conflict, and a climax that brings events
+				to a conclusion.
+				</para>
+				</formalpara>
+			</listitem>
+			<listitem>
+				<formalpara>
+					<title>Chronicle</title>
+					<para>
+				A Chronicle is a collection of stories. It's the overarcing plotline
+				that connects all the stories together, linking parts and pieces
+				to create a full-blown epic.
+				</para>
+				</formalpara>
+			</listitem>
+		</itemizedlist>
+	</sect1>
+	<sect1>
+		<title>Character Creation</title>
+		<sidebar>
+			<orderedlist>
+				<listitem>
+					<para>Character Concept</para>
+				</listitem>
+				<listitem>
+					<para>Starting Experience</para>
+				</listitem>
+				<listitem>
+					<para>Buy Talents</para>
+				</listitem>
+				<listitem>
+					<para>Buy Species</para>
+				</listitem>
+				<listitem>
+					<para>Buy Culture</para>
+				</listitem>
+				<listitem>
+					<para>Buy Career(s)</para>
+				</listitem>
+				<listitem>
+					<para>Buy Skills &amp; Specialties</para>
+				</listitem>
+			</orderedlist>
+		</sidebar>
+		<sect2>
+			<title>Character Concept</title>
+			<para>
+        The most important thing to keep in mind when creating a character, is the
+        <emphasis>concept</emphasis> of the character.
+        The concept is like an idea or a vision of the character.
+        <!-- What is his name? What does he look like? -->
+			</para>
+			<para>
+        A good starting points for a concept could be a picture, a movie character, or
+        anything else you might find inspiring. Be creative and have fun!
+      </para>
+			<para>
+        At this early stage of the character creation process, the character concept
+        is by no means chiseled in stone.
+        Figuring out a concept is just a tool for making a more believable character.
+        It helps define your character's <emphasis>style</emphasis>. His personality.
+        How he acts. How he tends to deal with conflicts.
+
+        If you want to play a character with magical abilities, this part is very important.
+        Style defines how a character does magic.
+        Personality and state of mind colors the magical effects.
+        See <xref linkend="magic"/>.
+      </para>
+			<para>
+        When you have a good idea of the character concept you want to play, it's
+        time to move on to the statistics.
+        While doing the following steps, keep this concept in mind and let the statistics
+        reflect and emphasise the concept.
+      </para>
+		</sect2>
+		<sect2>
+			<title>Starting Experience</title>
+			<para>
+        All characters start with 10 Talent Points (TPs) and 100 Experience Points (EPs).
+        The TPs are used to buy Talents.
+        The EPs are used to buy Species, Skills and Specialties.
+        (See <xref linkend="acquisition"/> and <xref linkend="advancement"/>.)
+      </para>
+		</sect2>
+		<sect2 xml:id="acquisition">
+			<title>Acquisition</title>
+			<itemizedlist>
+				<listitem>
+					<para>Talents: Start at 0; to increase a Talent by 1 point costs 1 TP; to decrease a Talent by 1 point yelds 1 TP to spend on another Talent</para>
+				</listitem>
+				<listitem>
+					<para>Skill: EP Cost to Level = Level * (Level+1) / 2</para>
+				</listitem>
+				<listitem>
+					<para>Specialty: EP Cost to Level = Level * (Level+1) / 2</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2 xml:id="advancement">
+			<title>Advancement</title>
+			<itemizedlist>
+				<listitem>
+					<para>Talents: EP Cost to next rank = Next rank + 10; minimum 1 (adjust; too cheap)</para>
+				</listitem>
+				<listitem>
+					<para>Skill: EP Cost to next level = Next level</para>
+				</listitem>
+				<listitem>
+					<para>Specialty: EP Cost to next level = Next level</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2>
+			<title>Talents</title>
+			<para>
+        Human Talents are in the range -5, -4, -3, -2, -1, 0, +1, +2, +3, +4, +5.
+        It should be noted that different player Species may have modifiers to some
+        Talents, thus moving them above or below the normal human range of -5 to +5.
+      </para>
+			<table frame="all" pgwide="0">
+				<title>Talent Description</title>
+				<tgroup cols="2">
+					<colspec align="center" colname="c1" colwidth="50"/>
+					<colspec align="left" colname="c2" colwidth="200"/>
+					<thead>
+						<row>
+							<entry>Talent</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>-10*</entry>
+							<entry>(Recommended Minimum Character Species Talent)</entry>
+						</row>
+						<row>
+							<entry>-9*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>-8*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>-7*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>-6*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>-5</entry>
+							<entry>Minimal</entry>
+						</row>
+						<row>
+							<entry>-4</entry>
+							<entry>Sub-"human"</entry>
+						</row>
+						<row>
+							<entry>-3</entry>
+							<entry>Feeble</entry>
+						</row>
+						<row>
+							<entry>-2</entry>
+							<entry>Deficient</entry>
+						</row>
+						<row>
+							<entry>-1</entry>
+							<entry>BelowAverage</entry>
+						</row>
+						<row>
+							<entry>0</entry>
+							<entry>Average</entry>
+						</row>
+						<row>
+							<entry>+1</entry>
+							<entry>AboveAverage</entry>
+						</row>
+						<row>
+							<entry>+2</entry>
+							<entry>Exceptional</entry>
+						</row>
+						<row>
+							<entry>+3</entry>
+							<entry>Gifted</entry>
+						</row>
+						<row>
+							<entry>+4</entry>
+							<entry>Prodigious</entry>
+						</row>
+						<row>
+							<entry>+5</entry>
+							<entry>Superior</entry>
+						</row>
+						<row>
+							<entry>+6*</entry>
+							<entry>Heroic</entry>
+						</row>
+						<row>
+							<entry>+7*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>+8*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>+9*</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>+10*</entry>
+							<entry>(Recommended Maximum Character Species Talent)</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<para>
+        *Assuming modifiers for Species
+      </para>
+			<table frame="all" pgwide="0">
+				<title>Talents</title>
+				<tgroup cols="3">
+					<colspec align="left" colname="c1" colwidth="70"/>
+					<colspec align="center" colname="c2" colwidth="40"/>
+					<colspec align="left" colname="c3" colwidth="300"/>
+					<spanspec spanname="hspan" namest="c1" nameend="c3" align="left"/>
+					<thead>
+						<row>
+							<entry>Talent</entry>
+							<entry>Abbrev.</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="c1" spanname="hspan">MENTAL</entry>
+						</row>
+						<row>
+							<entry>Aura</entry>
+							<entry>AUR</entry>
+							<entry>
+                Aura is the non-tangible complement to beauty. It represents a
+                character's ability to impress, influence, seduce, command and lead
+                people. Qualities such as natural charisma, personal magnetism, and
+                sex appeal are greatly influenced by a character's aura.
+              </entry>
+						</row>
+						<row>
+							<entry>Intelligence</entry>
+							<entry>INT</entry>
+							<entry>
+                Intelligence encompasses memory, analytical and reasoning ability,
+                and speed of thought. A high Intelligence indicates a natural aptitude for
+                the generation, retention, and understanding of linear thought.
+              </entry>
+						</row>
+						<row>
+							<entry>Perception</entry>
+							<entry>PER</entry>
+							<entry>
+                Perception includes alertness and observational acuity.
+                A character with a high Perception score has keen senses and is less
+                likely to be surprised by unexpected developments.
+              </entry>
+						</row>
+						<row>
+							<entry>Psyche</entry>
+							<entry>PSY</entry>
+							<entry>
+                Psyche is the emotional counterpart to Intelligence. It rates a
+                character's ability to engage in creative, intuitive, spiritual and
+                transcendental thought. Amongst other things, Psyche enables interaction
+                with the supernatural, including the gods, the spirits of nature, and the
+                mysteries of the universe.
+              </entry>
+						</row>
+						<row>
+							<entry>Willpower</entry>
+							<entry>WIL</entry>
+							<entry>
+                Willpower is an indicator of self discipline (determination and
+                persistence) and mental fortitude (resistance to influence, pain and
+                stress).
+              </entry>
+						</row>
+						<row>
+							<entry colname="c1" spanname="hspan">PHYSICAL</entry>
+						</row>
+						<row>
+							<entry>Agility</entry>
+							<entry>AGI</entry>
+							<entry>
+                Agility represents body control (static and motive) and connectivity.
+                It includes balance, rhythm, and flexibility.
+              </entry>
+						</row>
+						<row>
+							<entry>Body</entry>
+							<entry>BOD</entry>
+							<entry>
+                Represents the amount of physical mistreatment that the character
+                can endure before his vital organs cease to function correctly, i.e. he
+                falls unconscious or die. Generally, Body is proportional to the
+                character's size.
+              </entry>
+						</row>
+						<row>
+							<entry>Fitness</entry>
+							<entry>FIT</entry>
+							<entry>
+                Fitness is an indicator of bodily health (immune system) and
+                metabolic efficiency. Running for two hours without halt is a good
+                example of a Fitness related activity.
+              </entry>
+						</row>
+						<row>
+							<entry>Manual Dexterity</entry>
+							<entry>DEX</entry>
+							<entry>
+                Manual Dexterity includes hand-eye coordination, fine motricity
+                of the arms and hands, and sensitivity of touch.
+              </entry>
+						</row>
+						<row>
+							<entry>Strength</entry>
+							<entry>STR</entry>
+							<entry>
+                Strength is a rating of physical power, both in its instantaneous
+                explosive expression and in its prolonged and measured form.
+              </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</sect2>
+		<sect2>
+			<title>Species</title>
+			<para>
+        Buy a Species. An average human costs 0 EPs. A Species with more
+        benefits than an average human costs EPs, while a Species with more drawbacks
+        than an average human yelds EPs to spend elsewere. See the list of Species relevant
+        to the Setting you will play in for more informaiton about specific Species.
+      </para>
+		</sect2>
+		<sect2>
+			<title>Culture</title>
+			<para>
+        Each Species has a list of Cultures associated with them. Buy one you feel is
+        approptiate for your character concept.
+      </para>
+		</sect2>
+		<sect2>
+			<title>Careers</title>
+			<para>
+        Each Culture has a list of Careers associated with them. Buy one or more you
+        feel is appropriate for your character concept.
+      </para>
+		</sect2>
+		<sect2>
+			<title>Skills &amp; Specialties</title>
+			<para>
+        Each Career has a list of Skills and Specialties associated with them.
+        Record the EPs you gain in the various Skills and Specialties from each Career
+        you've bought.
+        Buy non-Career Skills and Specialties you feel is appropriate for your character
+        concept. (See <xref linkend="acquisition"/> and <xref linkend="advancement"/>
+        on how to acquire and advance Skills and Specialties).
+      </para>
+			<table frame="all" pgwide="0">
+				<title>Skills &amp; Specialties</title>
+				<tgroup cols="2" colsep="1" rowsep="1">
+					<colspec align="left" colname="c1" colwidth="100"/>
+					<colspec align="left" colname="c2" colwidth="300"/>
+					<thead>
+						<row>
+							<entry>Skill</entry>
+							<entry>Example Specialties</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Animal Handling</entry>
+							<entry>Calming, Riding, Specific species, Training</entry>
+						</row>
+						<row>
+							<entry>Alertness</entry>
+							<entry>Ambushes, Traps, ...</entry>
+						</row>
+						<row>
+							<entry>Appraisal</entry>
+							<entry>Armors, Buildings, Gems, Jewelry, Weapons</entry>
+						</row>
+						<row>
+							<entry>Athletics</entry>
+							<entry>Climbing, Endurance, Sprinting, Swimming</entry>
+						</row>
+						<row>
+							<entry>Awareness</entry>
+							<entry>Demons, Magic, Places of Power, Spirits, Vampires</entry>
+						</row>
+						<row>
+							<entry>Combat, Close</entry>
+							<entry>1-H weapons, 2-H weapons, Dual weapons, Parry, Shield use</entry>
+						</row>
+						<row>
+							<entry>Combat, Ranged</entry>
+							<entry>Archery, Thrown, X-bows</entry>
+						</row>
+						<row>
+							<entry>Crafts</entry>
+							<entry>Any particular craft such as Blacksmithing, Cooking, Painting, Woodworking</entry>
+						</row>
+						<row>
+							<entry>Driving</entry>
+							<entry>Air, Land, Sea</entry>
+						</row>
+						<row>
+							<entry>Etiquette</entry>
+							<entry>Specific sub-culture such as Business, High Society, Religious</entry>
+						</row>
+						<row>
+							<entry>Expression</entry>
+							<entry>Poetry, Speeches, Sign language, Writing</entry>
+						</row>
+						<row>
+							<entry>Intimidation</entry>
+							<entry>Bluffing, Scare, Stare-Down</entry>
+						</row>
+						<row>
+							<entry>Investigation</entry>
+							<entry>Interviews, Research, Searching, Tracking</entry>
+						</row>
+						<row>
+							<entry>Law</entry>
+							<entry>Cultural, Religious</entry>
+						</row>
+						<row>
+							<entry>Leadership</entry>
+							<entry>Delegating, Direction, Inspiration, Organization, Speeches</entry>
+						</row>
+						<row>
+							<entry>Legerdemain</entry>
+							<entry>Card tricks, Open locks, Pick pockets</entry>
+						</row>
+						<row>
+							<entry>Lore</entry>
+							<entry>Demons, Herbs, ...</entry>
+						</row>
+						<row>
+							<entry>Medicine</entry>
+							<entry>Diseases, Physical injuries, Mental injuries, Surgery</entry>
+						</row>
+						<row>
+							<entry>Meditation</entry>
+							<entry>Learning, Problemsolving, Healing</entry>
+						</row>
+						<row>
+							<entry>Occult</entry>
+							<entry>Runes, Demons, Ghosts, Spirits, Vampires</entry>
+						</row>
+						<row>
+							<entry>Performance</entry>
+							<entry>Acting, Dancing, Juggling, Musical instrument, Singing</entry>
+						</row>
+						<row>
+							<entry>Politics</entry>
+							<entry>Type of culture</entry>
+						</row>
+						<row>
+							<entry>Science, Natural</entry>
+							<entry>Alchemy, Astronomy, Biology, Computers, Cosmology, Math, Physics</entry>
+						</row>
+						<row>
+							<entry>Science, Social</entry>
+							<entry>Art, History, Literature, Music, Philosophy, Psycology, Sociology</entry>
+						</row>
+						<row>
+							<entry>Stealth</entry>
+							<entry>Hiding, Shadowing, Sneaking</entry>
+						</row>
+						<row>
+							<entry>Streetwise</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>Subterfuge</entry>
+							<entry>Bluffing, Con games, Hiding emotions, Lying, Seduction</entry>
+						</row>
+						<row>
+							<entry>Survival</entry>
+							<entry>Arctic, Desert, Forest, Jungle, Mountain</entry>
+						</row>
+						<row>
+							<entry>Magical Source</entry>
+							<entry>Energy, Entropy, Daylight, Darkness, Kundalini</entry>
+						</row>
+						<row>
+							<entry>Magical Conductor</entry>
+							<entry>Earth, Comet, Fire, Mind, Spirit?</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<sect3>
+				<title>Alertness</title>
+				<para>
+				Confers a character's mindedness of his surroundings.
+				How easily he may detect events around him. Events both potentially
+				beneficial and harmful.
+				</para>
+			</sect3>
+			<sect3>
+				<title>Awareness</title>
+				<para>
+				Where Alterness governs a character's mindedness of reality,
+				Awareness governs a character's mindedness of the supernatual.
+				Awareness is much like a sixth sense. It allows the character to
+				sense the presence of supernatural entities and phenomena such as
+				ghosts, vampires, demons, etc. that are othervise hidden.
+				At higher difficulty levels an entity's Aura may be perceived.
+				</para>
+			</sect3>
+			<sect3>
+				<title>Combat, Close</title>
+				<para>
+				The Close Combat skill is used whenever there is need to fight with
+				non-ranged weapons, armed or unarmed (see <xref linkend="attacks"/>).
+				Close Combat is also used as defence (see <xref linkend="defences"/>).
+				</para>
+			</sect3>
+			<sect3>
+				<title>Combat, Ranged</title>
+				<para>
+				The Ranged Combat skill is used whenever there is need to
+				fight with ranged weapons, wether thrown, mechanical or
+				manual (see <xref linkend="attacks"/>).
+				</para>
+			</sect3>
+			<sect3>
+				<title>Crafts</title>
+				<para>
+			Primarily practical know-how. Combine with matching Science for synergy.
+			</para>
+			</sect3>
+			<sect3>
+				<title>Lore</title>
+				<para>
+				Theoretical knowledge of a partuclar field of study [not covered by Science].
+				</para>
+			</sect3>
+			<sect3>
+				<title>Medicine</title>
+				<para>
+				Use as first aid or long term treatment.
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+						First aid:
+						d10-d10* + Talent + Medicine [+ Specialty] >= Injury
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+						Long term treatment:
+						d10-d10* + FIT + 1 pr Medicine competency level of medic (both skill and specialty) - Injury = Injury healed
+						</para>
+					</listitem>
+				</itemizedlist>
+			</sect3>
+			<sect3>
+				<title>Meditation</title>
+				<para>
+				Spend time to think about a solution for a particular problem to make
+				the problem easier to solve for the character in real life.
+				A meditating character is oblivious to events in his surroundings,
+				much like a sleeper. He may be "awoken" in the same way a sleeper would.
+				</para>
+				<itemizedlist>
+					<listitem>
+						<para>
+						Meditation check:
+						d10-d10* + INT + Meditation [+ Specialty] - TD of problem = Meditation Result
+						</para>
+					</listitem>
+					<listitem>
+						<para>
+						Task Resolution:
+						d10-d10* + Meditation Result + Talent [+ Skill [+ Specialty]] >= TD of problem
+						</para>
+					</listitem>
+				</itemizedlist>
+			</sect3>
+			<sect3>
+				<title>Occult</title>
+				<para>
+				Confers knowledge of supernatural phenomena and entities.
+				</para>
+			</sect3>
+			<sect3>
+				<title>Science</title>
+				<para>
+			Primarily theorietical knowledge. Combine with matching Craft for synergy.
+			</para>
+			</sect3>
+		</sect2>
+	</sect1>
+	<sect1>
+		<title>Task Resolution</title>
+		<para>
+      Tasks: d10-d10* + Talent <optional>+ Skill</optional>
+			<optional>+ Specialty</optional> &gt;= Task Difficulty (TD)
+    </para>
+		<table frame="all">
+			<title>Task Difficulties</title>
+			<tgroup cols="4" colsep="1" rowsep="1">
+				<colspec colnum="1" colname="c1" colwidth="100" align="left"/>
+				<colspec colnum="2" colname="c2" colwidth="50" align="center"/>
+				<colspec colnum="3" colname="c3" colwidth="50" align="center"/>
+				<colspec colnum="4" colname="c4" colwidth="300" align="left"/>
+				<spanspec spanname="hspan" namest="c1" nameend="c4"/>
+				<thead>
+					<row>
+						<entry>Description</entry>
+						<entry>TD</entry>
+						<entry>Odds*</entry>
+						<entry>Could also be described as</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Easy</entry>
+						<entry>-5</entry>
+						<entry>89%</entry>
+						<entry>Routine, Simple, Trivial</entry>
+					</row>
+					<row>
+						<entry>Average</entry>
+						<entry>0</entry>
+						<entry>63%</entry>
+						<entry>Engaging, Fair, Intermediate</entry>
+					</row>
+					<row>
+						<entry>Difficult</entry>
+						<entry>5</entry>
+						<entry>25%</entry>
+						<entry>Difficult, Tough, Tricky</entry>
+					</row>
+					<row>
+						<entry spanname="hspan"/>
+					</row>
+					<row>
+						<entry>Very Difficult</entry>
+						<entry>10</entry>
+						<entry>6%</entry>
+						<entry>Challenging, Demanding, Tasking, Vexing</entry>
+					</row>
+					<row>
+						<entry>Extremely Diff</entry>
+						<entry>15</entry>
+						<entry>2.4%</entry>
+						<entry>Exacting, Formidable, Punishing</entry>
+					</row>
+					<row>
+						<entry>Limit</entry>
+						<entry>20</entry>
+						<entry>0.6%</entry>
+						<entry>Extreme, Ballistic</entry>
+					</row>
+					<row>
+						<entry spanname="hspan"/>
+					</row>
+					<row>
+						<entry>Crushing</entry>
+						<entry>25</entry>
+						<entry/>
+						<entry>Backbreaking, Monumental</entry>
+					</row>
+					<row>
+						<entry>Herculean</entry>
+						<entry>30</entry>
+						<entry/>
+						<entry>Epic, Staggering, Superhuman</entry>
+					</row>
+					<row>
+						<entry>Gargantuan</entry>
+						<entry>35</entry>
+						<entry/>
+						<entry>Stupefying</entry>
+					</row>
+					<row>
+						<entry spanname="hspan"/>
+					</row>
+					<row>
+						<entry>Titanic</entry>
+						<entry>40</entry>
+						<entry/>
+						<entry>Awesome</entry>
+					</row>
+					<row>
+						<entry>Unbelievable</entry>
+						<entry>50</entry>
+						<entry/>
+						<entry>Impossible</entry>
+					</row>
+					<row>
+						<entry>Inconceivable</entry>
+						<entry>60</entry>
+						<entry/>
+						<entry>Shattering</entry>
+					</row>
+					<row>
+						<entry spanname="hspan"/>
+					</row>
+					<row>
+						<entry>God-like</entry>
+						<entry>70</entry>
+						<entry/>
+						<entry>Legendary, Mythic</entry>
+					</row>
+					<row>
+						<entry>Immortal</entry>
+						<entry>80</entry>
+						<entry/>
+						<entry>Celestial, Eternal</entry>
+					</row>
+					<row>
+						<entry>Cosmic</entry>
+						<entry>100</entry>
+						<entry/>
+						<entry>Transcendental</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<para>
+      *Odds are calculated for a Tal = 0, Skill = 1 character.
+    </para>
+		<sect2>
+			<title>Composite Task Resolution</title>
+			<para>
+		d10-d10* + Skill - (N - 1) >= TD
+		</para>
+			<para>
+		where N is the number of Skills involved in the Task.
+		</para>
+		</sect2>
+		<sect2>
+			<title>Contested Task Resolution</title>
+			<para>
+		d10-d10* + Offensive Character's Skill >= Defensive Character's Skill
+		</para>
+		</sect2>
+		<sect2>
+			<title>Co-operative Task Resolution</title>
+			<para>
+		d10-d10* + Skill >= TD - (N - 1)
+		</para>
+			<para>
+		where N is the number characters attempting the Task.
+		</para>
+			<para>
+		The Task is successful if at least one of the characters makes his roll.
+		</para>
+		</sect2>
+		<sect2>
+			<title>Optional: Graded Outcome</title>
+			<para>
+		</para>
+		</sect2>
+		<sect2>
+			<title>Extended Task Resolution</title>
+			<para>
+		Used when a Task requires a number of consecutive Task Resolutions called Partial Task Resolution.
+		</para>
+			<para>
+		Each Partial Task Resolution, as well as the Task as a whole, is assigned a TD.
+		</para>
+			<para>
+		Each Partial Task Resolution is resolved separately.
+		If all Partial Task Resolutions succeed, the Task as a whole succeeds.
+		If the first Partial Task Resolution fails, the Task as a whole fails.
+		If the second, or one or more of the subsequent Partial Task Resolutions
+		fail, the Task as a whole may fail or be a partial success (Graded Outcome)
+	  depending on the degree of failure.
+		</para>
+			<para>
+		(1) Success = d10-d10* + Skill [+ Previous Success] - TD
+		</para>
+			<para>
+		(2) d10-d10* + Skill >= TD for Partial Task
+		</para>
+			<para>
+		If the Partial Task succeeds, continue to the next Partial Task.
+		Continue until all Partial Tasks have been successfully resolved or failed.
+		</para>
+		</sect2>
+	</sect1>
+	<sect1>
+		<title>Combat</title>
+		<para>
+      Each round (6 seconds) your character can make two actions.
+      For each additional action performed, a cumulative -5 penalty is added
+      to every action.
+    </para>
+		<para>
+      Example: 2 actions: no penalty; 3 actions: -5 to all 3 actions;
+      6 actions: -20 to all 6 actions.
+    </para>
+		<para>
+      Multiple actions shortcut formula: <literal>Penalty = -5 * (n-2)</literal>
+      where <literal>n</literal> is the total number of actions performed.
+    </para>
+		<para>
+      As the observant reader probably has seen, a character performing only one action
+      in a round will have a "penalty" of +5 ( <literal>-5 * (1-2) = -5 * -1 = +5</literal> ) according to this formula.
+      This is not a fault in the formula. On the contrary, it makes perfect sense.
+      When a character spends more time concentrating on a single action he or she
+      (or it) should be rewarded with a bonus.
+    </para>
+		<table frame="all">
+			<title/>
+			<tgroup cols="2">
+				<colspec align="left" colname="c1" colwidth="200"/>
+				<colspec align="center" colname="c2" colwidth="50"/>
+				<thead>
+					<row>
+						<entry>Action performed</entry>
+						<entry>Action cost</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>1 Attack</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>1 Defence</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Dodge 2 attacks</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Move a distance equal to Base Movement</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Seath weapon in belt</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Draw weapon from belt</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Drop an item</entry>
+						<entry>0</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<sect2 xml:id="attacks">
+			<title>Attacks</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+					Archery/X-bows: PER <optional>+ Ranged Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+            Melee/Unarmed: DEX <optional>+ Close Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+            Thrown: DEX <optional>+ Ranged Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2 xml:id="defences">
+			<title>Defences</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+            Catch: DEX <optional>+ Close Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+            Dodge: AGI <optional>+ Close Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+            Parry: DEX <optional>+ Close Combat</optional>
+						<optional>+ Specialty</optional>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2 xml:id="combat_resolution">
+			<title>Combat Resolution</title>
+			<itemizedlist>
+				<listitem>
+					<para>Close Combat: d10-d10* + Attacker's attack &gt;= Defender's defence</para>
+					<para>Optional: Attack Success = d10-d10* + Attacker's attack - Defender's defence</para>
+				</listitem>
+				<listitem>
+					<para>Ranged Combat: d10-d10* + Attacker's attack &gt;= Defender's defence [+ Range &amp; Size mod]</para>
+					<para>Optional: Attack Success = d10-d10* + Attacker's attack - ( Defender's defence [+ Range &amp; Size mod] )</para>
+				</listitem>
+				<listitem>
+					<para>Damage: Weapon Impact + STR <optional>- Weapon's minimum STR</optional>
+						<optional>+ Attack Success</optional>
+					</para>
+				</listitem>
+				<listitem>
+					<para>Injury: Damage - Resistance</para>
+				</listitem>
+				<listitem>
+					<para>Unconscious check: d10-d10* + 25 + BOD + WIL &gt;= Total Injury</para>
+				</listitem>
+				<listitem>
+					<para>Death check: d10-d10* + 40 + BOD &gt;= Total Injury</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2 xml:id="range_modifiers">
+			<title>Range Modifiers</title>
+			<para>
+			</para>
+			<table frame="all">
+				<title>Range Base TD</title>
+				<tgroup cols="3" colsep="1" rowsep="1">
+					<colspec align="left" colname="c1" colwidth="50"/>
+					<colspec align="center" colname="c2" colwidth="100"/>
+					<colspec align="center" colname="c3" colwidth="50"/>
+					<thead>
+						<row>
+							<entry>Distance</entry>
+							<entry>Range</entry>
+							<entry>Base TD</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Near</entry>
+							<entry>0 - 10 meters</entry>
+							<entry>0</entry>
+						</row>
+						<row>
+							<entry>Moderate</entry>
+							<entry>11 - 50 meters</entry>
+							<entry>5</entry>
+						</row>
+						<row>
+							<entry>Far</entry>
+							<entry>51 - 100 meters</entry>
+							<entry>10</entry>
+						</row>
+						<row>
+							<entry>Extreme</entry>
+							<entry>100 meters &lt;</entry>
+							<entry>15</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</sect2>
+		<sect2 xml:id="item_quality">
+			<title>Item Quality Checks &lt;= re-write; make conform with d10-d10*</title>
+			<para>
+        All items have a Quality (Qlt) rating in the range 1-5.
+      </para>
+			<para>
+        Item quality checks are done by rolling a d6 versus the item's Quality rating.
+        <programlisting>
+          If d6 &lt;= Qlt  : No problem.
+          If d6 &gt;  Qlt  : Item is damaged.
+          If d6 &gt;  2xQlt: Item is broken and unusable.
+        </programlisting>
+
+        If item is damaged, reduce one of its properties (impact, resistance, quality, etc.) by one.
+        A roll of 6 will allways result in damage to the item.
+      </para>
+			<para>
+        Check weapon for damage when
+      </para>
+			<itemizedlist>
+				<listitem>
+					<para>the weapon parries another weapon, and the weapon parried has a higher quality than the weapon doing the parry</para>
+				</listitem>
+				<listitem>
+					<para>the above check succeeds</para>
+				</listitem>
+				<listitem>
+					<para>the weapon does maximum impact but is less than the armor's resistance</para>
+				</listitem>
+				<listitem>
+					<para>ever the GM feels it is apropriate</para>
+				</listitem>
+			</itemizedlist>
+			<para>
+        Check armor for damage when
+      </para>
+			<itemizedlist>
+				<listitem>
+					<para>the armor is penetrated by a weapon (Impact &gt; Resistance)</para>
+				</listitem>
+				<listitem>
+					<para>a weapon checks due to strike against armor but succeeds</para>
+				</listitem>
+				<listitem>
+					<para>ever the GM feels it is appropriate</para>
+				</listitem>
+			</itemizedlist>
+			<para>
+				<emphasis>
+          Optional: Items may have a Quality rating higher than 6.
+          When checking item for damage, reroll any sixes and summarize.
+        </emphasis>
+			</para>
+		</sect2>
+	</sect1>
+	<sect1 xml:id="magic">
+		<title>Magic</title>
+		<table frame="all">
+			<title>Magical effects and TDs</title>
+			<tgroup cols="4">
+				<colspec align="center" colname="c1" colwidth="100"/>
+				<colspec align="center" colname="c2" colwidth="100"/>
+				<colspec align="center" colname="c3" colwidth="100"/>
+				<colspec align="center" colname="c4" colwidth="100"/>
+				<thead>
+					<row>
+						<entry>TD</entry>
+						<entry>Degree of Control</entry>
+						<entry>External control</entry>
+						<entry>Manipulation</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>5</entry>
+						<entry>Minor</entry>
+						<entry/>
+						<entry/>
+					</row>
+					<row>
+						<entry>10</entry>
+						<entry>Moderate</entry>
+						<entry>Minor</entry>
+						<entry>Minor</entry>
+					</row>
+					<row>
+						<entry>15</entry>
+						<entry>Major</entry>
+						<entry>Moderate</entry>
+						<entry>Moderate</entry>
+					</row>
+					<row>
+						<entry>20</entry>
+						<entry>Extreme</entry>
+						<entry>Major</entry>
+						<entry>Major</entry>
+					</row>
+					<row>
+						<entry>25</entry>
+						<entry>Total</entry>
+						<entry>Extreme</entry>
+						<entry>Extreme</entry>
+					</row>
+					<row>
+						<entry>30</entry>
+						<entry></entry>
+						<entry>Total</entry>
+						<entry>Total</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<programlisting>
+Internal passive effects are the easiest;
+Internal active effects/External passive effects;
+External active effects are the hardest;
+
+Internal: Effects governing the self;
+External: Effects governing phenomena outside of the self;
+Passive: Sensing, perceiving, detecting, introspection;
+Active: Manipulating, transforming, creating;
+
+Internal: +0 TD
+Passive: +0 TD
+External: +5 TD
+Active: +5 TD
+- Manipulation: +5 TD
+- Transformation: +10 TD
+- Creation: +20 TD
+
+Minor: 5
+Moderate: 10
+Major: 15
+Extreme: 20
+Total: 25
+
+Description of effect potency:
+Minor:
+- Gain knowledge about and understanding of phenomena within the magical
+  domain's scope.
+- Elementary manipulation of phenomena within the magical domain's scope,
+  enough to activate them and/or bestow directions.
+- Gain sensory perception of phenomena within the magical domain's scope.
+
+Moderate:
+- Exert elementary command and control over phenomena within the magical
+  domain's scope.
+- Conceal, camouflage or hide phenomena within the magical domain's scope
+  from scrutiny.
+- Protect a target from harmful effects created from within the magical
+  domain's scope.
+
+Major:
+- Alter the capabilities or functions of phenomena withing the magical
+	domain's scope.
+- Injure a target.
+- Fortify, bolster or improve phenomena within the magical domain's scope.
+
+Extreme:
+- Transform phenomena within the magical domain's scope into related
+  phenomena or shapes, or replace their capabilities or functions with
+  different ones.
+- Significantly injure a target, degrade its capabilities or negatively
+  transform it.
+
+Total:
+- Create phenomena within the magical domain's scope from nothing.
+- Destroy or mutilate a target.
+
+Minimal life: Plants?
+Simple life: Bacteria/Virus
+Moderate life: Insects
+Complex life: Reptiles/Mammals
+
+Defaults:
+- Potency: 0? Power of the effect (TD to dispell)
+- Targets: 1 target (SR: -5 to 5 or just 0?) or based on target's WIL
+- Duration: 1 round (app. 6 sec)
+
+Increase:
+- Potency: 1-to-1 (+1 TD to dispell => +1 TD to cast)
+- Targets: +5 TD pr additional creature + creature's SR/WIL
+- Duration: +1 TD pr round
+
+Spell casting and fatigue:
+- If the spell succeeds no fatigue is gained.
+- For every 5 points of failure the mage gains 1 fatigue.
+	Ex:
+	TD- 1 to TD- 5: 1 fatigue
+	TD- 6 to TD-10: 2 fatigue
+	TD-11 to TD-15: 3 fatigue
+	...
+		</programlisting>
+	</sect1>
+	<sect1>
+		<title>Experience</title>
+		<para>
+      Experience Points (EPs) are awarded in five categories:
+    </para>
+		<orderedlist numeration="loweralpha">
+			<listitem>
+				<para>Adventure/goals fulfilled</para>
+			</listitem>
+			<listitem>
+				<para>Bard's tale/heroics</para>
+			</listitem>
+			<listitem>
+				<para>Conflict/danger</para>
+			</listitem>
+			<listitem>
+				<para>Forethought/ingenuity</para>
+			</listitem>
+			<listitem>
+				<para>Growth/interaction</para>
+			</listitem>
+		</orderedlist>
+		<table frame="all">
+			<title>Experience Award</title>
+			<tgroup cols="2">
+				<colspec colnum="1" colname="significance" align="left" colwidth="100"/>
+				<colspec colnum="2" colname="reward" align="center" colwidth="50"/>
+				<thead>
+					<row>
+						<entry>Significance</entry>
+						<entry>Award</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>None</entry>
+						<entry>0</entry>
+					</row>
+					<row>
+						<entry>Noteworthy</entry>
+						<entry>1</entry>
+					</row>
+					<row>
+						<entry>Impressive</entry>
+						<entry>2</entry>
+					</row>
+					<row>
+						<entry>Spectacular</entry>
+						<entry>4</entry>
+					</row>
+					<row>
+						<entry>Legendary</entry>
+						<entry>8</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</sect1>
+</article>
