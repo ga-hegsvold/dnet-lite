@@ -1,0 +1,31 @@
+Skill            ;ARTISTIC;ATHLETIC;CRAFT;KNOWLEDGE;NATURE;SOCIAL;SUBTERFUGE;MAGICAL
+Athletics        ;        ;X       ;     ;         ;      ;      ;          ;
+Combat, Close    ;        ;X       ;     ;         ;      ;      ;          ;
+Combat, Ranged   ;        ;X       ;     ;         ;      ;      ;          ;
+Alertness        ;        ;X       ;     ;         ;X     ;      ;          ;
+Animal Handling  ;        ;        ;     ;         ;X     ;      ;          ;
+Driving          ;        ;        ;     ;         ;X     ;      ;          ;
+Survival         ;        ;        ;     ;         ;X     ;      ;          ;
+Etiquette        ;        ;        ;     ;         ;      ;X     ;          ;
+Expression       ;X       ;        ;     ;         ;      ;X     ;          ;
+Intimidation     ;        ;        ;     ;         ;      ;X     ;          ;
+Law              ;        ;        ;     ;X        ;      ;X     ;          ;
+Leadership       ;        ;        ;     ;         ;      ;X     ;          ;
+Performance      ;X       ;        ;     ;         ;      ;X     ;          ;
+Politics         ;        ;        ;     ;X        ;      ;X     ;          ;
+Awareness        ;        ;        ;     ;         ;X     ;      ;          ;X
+Magical Source   ;        ;        ;     ;         ;      ;      ;          ;X
+Magical Conductor;        ;        ;     ;         ;      ;      ;          ;X
+Legerdemain      ;        ;        ;     ;         ;      ;      ;X         ;
+Stealth          ;        ;        ;     ;         ;      ;      ;X         ;
+Streetwise       ;        ;        ;     ;         ;      ;X     ;X         ;
+Subterfuge       ;        ;        ;     ;         ;      ;      ;X         ;
+Appraisal        ;        ;        ;X    ;X        ;      ;      ;          ;
+Craft            ;        ;        ;X    ;         ;      ;      ;          ;
+Lore             ;        ;        ;     ;X        ;      ;      ;          ;
+Medicine         ;        ;        ;     ;X        ;      ;      ;          ;
+Occult           ;        ;        ;     ;X        ;      ;      ;          ;X
+Science, Natural ;        ;        ;     ;X        ;X     ;      ;          ;
+Science, Social  ;        ;        ;     ;X        ;      ;X     ;          ;
+Investigation    ;        ;        ;     ;X        ;X     ;X     ;          ;
+Meditation       ;        ;        ;     ;X        ;      ;      ;          ;
