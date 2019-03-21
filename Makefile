@@ -1,7 +1,7 @@
 FILE = dnet-lite
 
 $(FILE).pdf: $(FILE).fo
-	fop $(FILE).fo -pdf $(FILE).pdf; rm $(FILE).fo; acroread $(FILE).pdf
+	fop $(FILE).fo -pdf $(FILE).pdf; rm $(FILE).fo; foxit $(FILE).pdf
 
 $(FILE).fo: $(FILE).xml
 	xsltproc -o $(FILE).fo \
@@ -19,7 +19,7 @@ $(FILE).fo: $(FILE).xml
 	--stringparam column.count.lot 1 \
 	--stringparam body.font.master 8 \
 	--stringparam draft.mode yes \
-	/usr/share/sgml/docbook/xsl-stylesheets/fo/docbook.xsl $(FILE).xml
+	xsl/1.77.0/fo/docbook.xsl $(FILE).xml
 
 clean:
 	rm $(FILE).pdf
